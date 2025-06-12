@@ -45,6 +45,7 @@ The alarm was associated with an **Amazon SNS Topic** (Simple Notification Servi
 To trigger the alarm, I connected to the EC2 instance using **EC2 Instance Connect** and ran a CPU-intensive command using the `stress` tool.
 
 sudo yum install stress -y
+
 stress --cpu 2 --timeout 300
 
 This command simulated a high CPU load for 5 minutes by running two CPU workers, enough to push the usage beyond 80%.
